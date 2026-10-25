@@ -20,7 +20,7 @@ Music and normal web search keep working — it only blocks the stuff that eats 
 2. **Double-click `Install Forever.bat`** and click **Yes** on the admin prompt. It sets up the
    background guard and auto-start, then opens StudyAnchor. *(Admin is needed once: blocking sites means
    editing the Windows hosts file.)*
-3. A small **popout** appears. Hit **▶ Study** to start a session.
+3. A small **popout** appears. Hit **Study** to start a session.
 
 Just want to try it without installing anything permanent? Double-click **`Start Focus.bat`**.
 
