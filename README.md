@@ -10,7 +10,7 @@ Music and normal web search keep working — it only blocks the stuff that eats 
 
 ---
 
-## 🚀 Quick start
+## Quick start
 
 > **New here?** StudyAnchor shows a short step-by-step tutorial the first time it opens. Reopen it any time with
 > the **❓** button (in the popout, or **❓ Tutorial** in the full window).
@@ -38,7 +38,7 @@ Everything runs **locally**: no account, no server, nothing leaves your machine.
 
 ---
 
-## 🧭 The rules
+## Rules
 
 **Study hours are fixed: 07:00 – midnight on weekdays, 10:00 – 18:00 on Sat/Sun, and you clock out at
 23:59 every night.** They are set in the code, not
@@ -50,12 +50,12 @@ app off, not closing it — the guard relaunches it within a minute.
 
 | Way to a break | How | Cost |
 |---|---|---|
-| 🏦 **Bank** | Finish a study session → **+15 min** saved; spend it any time | Earned; **15-min cooldown** between bank breaks, can't chain them |
-| ⚡ **Cheat** | One button, instant **5-minute** break | **2 per day**; finishing a session gives both back |
-| 🌴 **Day off** | Guess a hidden **3-digit code** (it re-rolls on every miss) | Hard — a break until midnight |
-| 🎮 **Games** | A 30-minute gaming break for launchers only | 90-minute cooldown |
-| 📚 **Learning** | 45 minutes of YouTube — **approved videos only** | **2 per day**; you approve videos in advance |
-| ☢ **Nuclear** | Total lockdown for 30 min – rest of day | **No escapes at all, can't be cancelled** |
+| **Bank** | Finish a study session → **+15 min** saved; spend it any time | Earned; **15-min cooldown** between bank breaks, can't chain them |
+| **Cheat** | One button, instant **5-minute** break | **2 per day**; finishing a session gives both back |
+| **Day off** | Guess a hidden **3-digit code** (it re-rolls on every miss) | Hard — a break until midnight |
+| **Games** | A 30-minute gaming break for launchers only | 90-minute cooldown |
+| **Learning** | 45 minutes of YouTube — **approved videos only** | **2 per day**; you approve videos in advance |
+| **Nuclear** | Total lockdown for 30 min – rest of day | **No escapes at all, can't be cancelled** |
 
 Rules that keep the breaks honest:
 
@@ -68,7 +68,7 @@ Rules that keep the breaks honest:
 
 ---
 
-## 🖥️ The app
+## App
 
 It opens as a small **always-on-top popout** (drag it by the top bar). **⤢** expands it to the full
 window; the full window behaves like a normal window, and **the moment you click away to another
@@ -79,24 +79,24 @@ The full window has tabs: **Dashboard** (status, quick actions, live stats), **B
 adjustable settings, the blocked-sites list and the Save button; the tab scrolls if it doesn't all fit.
 StudyAnchor doesn't keep a record of which apps or sites you use.
 
-### 📚 Study sessions
+### Study sessions
 Hit **Study**; when the timer ends you bank **+15 minutes** and get your cheats back. The timer
 counts real elapsed time (a sleeping laptop doesn't finish your session for you). **⏸ Pause** is for
 real interruptions — while paused, the nagging tells you to resume.
 
-### 📢 Notifications
+### Notifications
 Whenever you're on the clock **without a study session** (or a break just ended), an alert
 escalates from a small corner card to a big centered one, with beeps that build into a dissonant
 cluster, overlapping voices, optional strobe lights and your own recordings. The **sound is the
 real alert** — the window never goes fullscreen or steals focus. Every alert has **▶ Start session**
-and **😴 Snooze** buttons, so you're never trapped. *Settings → 🔔 Test notification* shows one.
+and **Snooze** buttons, so you're never trapped. *Settings → Test notification* shows one.
 
-### 📝 Reminders & 🎙 your own voice
+### Reminders & your own voice
 Write reminders in the **Reminders** tab; the app can read them aloud, auto-read one on an interval,
 and use them as the words it nags you with. Pick any installed Windows voice. **🎙 Record** saves a
 `.wav` into `sounds\` that plays during the loudest alerts (you can also drop `.wav` files there).
 
-### 📚 Learning break (YouTube tutorials without the rabbit hole)
+### Learning break (YouTube tutorials without the rabbit hole)
 Blocking works per website, so YouTube is normally all-or-nothing. A learning break opens YouTube for
 45 minutes but only lets a tab stay open if its **title contains something you approved in advance**
 (Learning tab → type part of the video's title, e.g. `CS50 lecture 3` or an audiobook's name). Any other
@@ -111,14 +111,14 @@ seconds**, with a short warning beep. Every other blocked site stays blocked.
   Phrases match the **video's title** (what the tab shows), not the channel and **not the link** — pasting a
   link is refused — and **every word you type has to appear in the title, in any order** (`dune audiobook` matches "Dune (Audiobook)" and "DUNE - Full Audiobook").
 
-**🎧 Audiobook mode (no time limit).** Tick *Audiobook — no time limit* when you approve a title and,
+**Audiobook mode (no time limit).** Tick *Audiobook — no time limit* when you approve a title and,
 once its 10 minutes are up, YouTube stays open **all day** for that title (and only that title) without
 a learning break and without using one of your 2. Other YouTube tabs still close after 10 seconds, other
 blocked sites stay blocked, and it keeps working during a study session so you can listen while you
 work. Because it is so much more open, an audiobook entry needs at least 8 characters, you can have at
 most 3, and a nuclear lockdown still shuts YouTube completely. Remove it from the list to turn it off.
 
-**🚫 YouTube Shorts are blocked completely — at every hour.** The hosts file can only block a whole site, and
+**YouTube Shorts are blocked completely — at every hour.** The hosts file can only block a whole site, and
 a Short's tab title never says "Shorts", so StudyAnchor uses the browsers' own URL-blocklist policy instead: it
 blocks the path `youtube.com/shorts` and nothing else on YouTube (Chrome, Edge, Brave and Firefox; Opera is
 not covered). The app and the guard keep it in place and put it back if it's removed. Needs the admin rights
@@ -126,28 +126,28 @@ StudyAnchor already has. Good to know: Chrome/Edge will say *"Managed by your or
 it doesn't touch other policies already set; and a Shorts tab that is **already open** keeps scrolling until
 you reload it — new Shorts links are blocked straight away. `Install Forever.bat --off` / uninstall removes it.
 
-**🔎 Bing video search is blocked.** Bing's video results (`bing.com/videos`) play YouTube inline, which
+**Bing video search is blocked.** Bing's video results (`bing.com/videos`) play YouTube inline, which
 would sidestep the YouTube rules, so any tab titled "… - Search Videos" is closed while blocking is on —
 learning breaks and audiobook mode included. Normal Bing web search still works.
 
-**🪟 Picture-in-Picture is blocked.** A video popped out into its own floating window would keep playing
+**Picture-in-Picture is blocked.** A video popped out into its own floating window would keep playing
 outside every tab (so the tab checks can't see it), so while blocking is on, any browser Picture-in-Picture
 window is closed within about 2 seconds — learning breaks and audiobook mode included, since the window
 doesn't say what is playing. In free time (a break, outside your hours, after clock-out) it is left alone.
 (Use the tab itself for audiobooks.) It closes only that window — it never sends keystrokes.
 
-### 🌿 Burnout guard & 🕗 Clock out
+### Burnout guard & Clock out
 Once you've studied your **daily cap** (default 240 min; `0` = off) the nagging stops and it tells
 you to rest. At **clock-out (23:59)** blocking and nagging switch off for the evening.
 
-**🕗 Clock out early.** From **20:00** a *🕗 Clock out* button appears in the popout (and in the
+**Clock out early.** From **20:00** a *🕗 Clock out* button appears in the popout (and in the
 full window's Breaks row). Tap it, confirm, and you're clocked out for the night: blocking and nagging
 switch off straight away, until tomorrow. It isn't there before 20:00, it can't be used mid-session or
 during a nuclear lockdown, and it can't be undone tonight. It resets at midnight.
 
-### 🚫 What gets blocked
+### What gets blocked
 YouTube, Instagram, TikTok, Reddit, Twitter/X, Facebook, Snapchat, Pinterest, Twitch, Tumblr, 9GAG,
-Netflix, Hulu, Disney+, Prime Video, Bilibili, IYF, Fandom, Minecraft, Amazon — plus any
+Netflix, Hulu, Disney+, Prime Video, Fandom, Minecraft, Amazon — plus any
 site you add in **Settings**. Game launchers (Steam, Epic, Battle.net, EA/Origin, Ubisoft Connect,
 GOG Galaxy, Xbox app, Riot, Rockstar, itch.io) are closed unless you take a gaming break.
 
@@ -157,7 +157,7 @@ you already have open in the background stay open until you reload them.
 
 ---
 
-## ♾️ Forever mode
+## Forever mode
 
 `Install Forever.bat` creates two scheduled tasks:
 
@@ -173,14 +173,14 @@ After updating the files, double-click **`Restart Focus.bat`** to load the new v
 
 ---
 
-## ⚙️ Settings reference
+##Settings reference
 
 | Setting | Can be changed… | What it does |
 |---|---|---|
 | Study session length | up only, never below 20 | Minutes per session |
 | Daily study cap | up only (`0` = off is the strictest) | Rest message + nagging stops after this many minutes |
 | Gaming break cooldown | up only | Wait between gaming breaks |
-| Snooze length | down only | How long 😴 pauses the nudges |
+| Snooze length | down only | How long snooze pauses the nudges |
 | Gaming break length | down only | Length of a gaming break |
 | Notification frequency, Alarm intensity, Max voices, Strobe | freely | How loud and how often the nagging is |
 | Blocked sites | **add only** | The list of blocked sites |
@@ -190,7 +190,7 @@ Time values are minutes, 0–1440.
 
 ---
 
-## 🧪 Tests
+## Tests
 
 ```
 python run_tests.py          # everything (about 2 minutes: opens real, hidden windows)
@@ -204,11 +204,11 @@ or settings.
 
 ---
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 - **A blocked site still loads?** Turn off your browser's **Secure DNS / DNS-over-HTTPS**
   (Chrome/Edge: Settings → Privacy → Security; Firefox: DNS over HTTPS → Off) and reload the tab.
-- **Nothing is being blocked?** Check the popout says 🔒 LOCKED IN. Outside your hours (07:00–midnight
+- **Nothing is being blocked?** Check the popout says LOCKED IN. Outside your hours (07:00–midnight
   weekdays, 10:00–18:00 weekends), after
   23:59, or during any break, everything is free on purpose. Run `Install Forever.bat` again if the
   app isn't running at all.
@@ -218,13 +218,13 @@ or settings.
 - **Notifications don't appear?** Use **Settings → Test notification**. If that works, you just
   haven't hit a trigger (outside hours, or a session is running).
 - **Recording doesn't work?** Make sure a microphone is connected and allowed in Windows.
-- **Too much nagging?** Lower *Notification frequency*, or use **😴 Snooze**.
+- **Too much nagging?** Lower *Notification frequency*, or use **Snooze**.
 - **Strobe warning:** high-level alerts flash rapidly. Turn **Strobe off** in Settings if you're
   sensitive to flashing light.
 
 ---
 
-## 📁 What's in the folder
+## What's in the folder
 
 | File | Purpose |
 |---|---|
@@ -241,11 +241,10 @@ or settings.
 | `logo.png` / `logo.ico` | The app logo (window icon, headers, tutorial, this page) |
 | `sounds\` | Empty on purpose: put your own `.wav` recordings here for the loudest alerts |
 | `tests\` | The test suite |
-| `starter\` | A "build it yourself" teaching version with a step-by-step guide |
 | `FEATURES.md`, `ARCHITECTURE.md` | Feature list and how the code fits together |
 
 Your settings and progress live in `C:\ProgramData\FocusTool\state.json`.
 
 ---
 
-**Study hard. ⚓**
+**Study hard**
